@@ -1,4 +1,11 @@
 body {
     background-image: URL(dreamshop.png);
     background-size: cover;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: '';
+    src: url('');
 }
