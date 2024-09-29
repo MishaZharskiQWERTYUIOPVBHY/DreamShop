@@ -9,3 +9,48 @@ body {
     font-family: '';
     src: url('');
 }
+
+main {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+    display: flex;
+    flex-direction: colu;
+}
+
+.card {
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.collage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.collage > img {
+    flex: 40%;
+    margin: 0 4px;
+}
+
+.collage_column > img {
+    width: 100%;
+    margin: 40px 0;
+    border-radius: 8px;
+}
+
+form > * {
+    display: block;
+}

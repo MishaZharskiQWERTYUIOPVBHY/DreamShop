@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Dreamshop.rblx.com/home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home page</a>
+            <a href="about.html">Developers</a>
+            <a href="russuanindex.html">Главная страница</a>
+            <a href="russianabout.html">Разработчики</a>
+            <a href="site.html">More info Больше информации</a>
+            <a href="form.html">Админ панель</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <form action="#">
+                <label for="name">Административная панель, введите пароль
+                </label>
+                <input id="password" name="password" type="password" placeholder="пароль 1234" required>
+                <label class="container">
+                    Запомнить пароль
+                    <input type="checkbox">
+                </label>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        const password = "1234";
+        const passwordField = document.querySelector("#password");
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", (ev)=>{
+            ev.preventDefault();
+
+            const value = passwordField.value;
+            if(value === password) {
+                location.href = "adminpanel.html";
+            } else {
+                alert("Неправильный пароль!")
+            }
+        })
+    </script>
+</body>
+
+
+</html>
